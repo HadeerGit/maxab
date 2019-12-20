@@ -1,0 +1,31 @@
+{
+	"variables": [],
+	"info": {
+		"name": "sessions schedualer",
+		"_postman_id": "b7549333-f64d-f2b4-11c3-1f9a61f3661a",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "generate schedualer",
+			"request": {
+				"url": "http://localhost:8000/api/v1/student/generate-scheduler",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"start_date\" : \"2019-12-20\",\r\n\t\"chosen_days\" : [ 2,5,6],\r\n\t\"sessions_count\": 3\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
