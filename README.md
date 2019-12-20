@@ -1,29 +1,21 @@
-<<<<<<< HEAD
-# Lumen PHP Framework
+**Task:** 
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+A student required to finish a book of thirty chapters, he is allowed to choose when he starts,
+ days he will be attending every week and a starting date.
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+You are required to develop an api using Laravel framework that takes 3 inputs:
 
-## Official Documentation
+ - Starting date
+ - int array with number of days per week assuming the start of the week is Saturday.
+    Example: {2,4,6}
+ - How many sessions required to finish one chapter.
+    Example: {6}
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Response will be a json representing the sessions schedule for this student until he finishes the 30 chapters.
 
-## Contributing
+Example [2019-08-01, 2019-09-1, ….]
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-||||||| merged common ancestors
-=======
-# Session-Schedualer-task
->>>>>>> 4ddae3c599b6c0dba0ef30abcd300ec8ec86f94e
+**Notes:**
+  - Number of day is located within period from 1 to 7 ex: 1 ===> saturday
+  - i have attached postman collection for testing
+  
